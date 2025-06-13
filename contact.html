@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>BlogTech - Contato</title>
+  <link rel="stylesheet" href="assets/style.css">
+  <script>
+    function handleSubmit(e) {
+      e.preventDefault();
+      alert('Mensagem enviada! (Funcionalidade simulada para este exemplo)');
+      document.getElementById('contact-form').reset();
+    }
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <img src="assets/logo.svg" alt="BlogTech Logo" class="site-logo">
+    <span class="site-title">BlogTech</span>
+    <nav class="site-nav">
+      <a href="index.html" class="site-nav-link">Home</a>
+      <a href="posts.html" class="site-nav-link">Posts</a>
+      <a href="about.html" class="site-nav-link">Sobre</a>
+      <a href="contact.html" class="site-nav-link">Contato</a>
+    </nav>
+  </header>
+  <main class="main-container">
+    <h1 class="heading-primary">Contato</h1>
+    <form id="contact-form" onsubmit="handleSubmit(event)">
+      <label for="name">Nome:</label>
+      <input type="text" id="name" name="name" class="input-field" required>
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" name="email" class="input-field" required>
+      <label for="message">Mensagem:</label>
+      <textarea id="message" name="message" class="textarea-field" rows="5" required></textarea>
+      <button class="button" type="submit">Enviar</button>
+    </form>
+  </main>
+  <footer class="site-footer">
+    &copy; 2025 BlogTech. Criado por Felipe Gomes.
+  </footer>
+</body>
+</html>

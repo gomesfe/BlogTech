@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+
+:root {
+  --color-primary: #1976d2;
+  --color-bg: #f8fafc;
+  --color-surface: #fff;
+  --color-text: #222;
+  --color-border: #e0e0e0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', Arial, sans-serif;
+  background: var(--color-bg);
+  color: var(--color-text);
+}
+
+.site-header {
+  background: var(--color-primary);
+  color: #fff;
+  padding: 1rem 0;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(25, 118, 210, 0.08);
+}
+
+.site-logo {
+  height: 40px;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.site-title {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.site-nav {
+  margin-top: 0.5rem;
+}
+
+.site-nav-link {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 1rem;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.site-nav-link:hover {
+  color: #bbdefb;
+}
+
+.main-container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background: var(--color-surface);
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(50, 50, 50, 0.04);
+}
+
+.heading-primary,
+.heading-secondary,
+.heading-tertiary {
+  color: var(--color-primary);
+}
+
+.heading-primary {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.heading-secondary {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.heading-tertiary {
+  font-size: 1.2rem;
+  margin-bottom: 0.7rem;
+}
+
+.post-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.post-list-item {
+  margin-bottom: 2rem;
+  border-bottom: 1px solid var(--color-border);
+  padding-bottom: 1rem;
+}
+
+.post-list-item:last-child {
+  border-bottom: none;
+}
+
+.post-title {
+  font-size: 1.3rem;
+  margin: 0 0 0.5rem 0;
+  font-weight: 700;
+}
+
+.post-meta {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.button {
+  display: inline-block;
+  background: var(--color-primary);
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1.2rem;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background 0.2s;
+  margin-top: 1rem;
+}
+
+.button:hover {
+  background: #1565c0;
+}
+
+.input-field,
+.textarea-field {
+  width: 100%;
+  padding: 0.7rem;
+  margin-bottom: 1rem;
+  border: 1px solid var(--color-border);
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.site-footer {
+  text-align: center;
+  color: #888;
+  padding: 1rem 0 0.5rem 0;
+  font-size: 0.9rem;
+  margin-top: 2rem;
+}

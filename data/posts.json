@@ -1,0 +1,27 @@
+[
+ 
+    {
+    "id": 1,
+    "title": "Bem-vindo ao BlogTech!",
+    "date": "28-05-2025",
+    "author": "Felipe Lima",
+    "summary": "Descubra o universo do desenvolvimento web e dicas de tecnologia para iniciantes e intermediários.",
+    "content": "<p>Este é o primeiro post do BlogTech. Por aqui, vamos falar sobre programação, tendências em tecnologia, dicas para desenvolvedores e muito mais!</p>"
+  },
+  {
+    "id": 2,
+    "title": "Como criar um blog do zero",
+    "date": "02-06-2025",
+    "author": "Juliano Silva",
+    "summary": "Aprenda a criar seu próprio blog usando apenas HTML, CSS e um pouco de JavaScript.",
+    "content": "<p>Neste post, ensinamos como montar a estrutura básica de um blog, separar os arquivos e garantir uma navegação simples e eficiente.</p>"
+  },
+  {
+    "id": 2,
+    "title": "5 Dicas para Aprender Programação Mais Rápido",
+    "date": "10-06-2025",
+    "author": "Gabriel Luis",
+    "summary": "Confira dicas práticas para acelerar seu aprendizado em programação, seja você iniciante ou já tenha alguma experiência.",
+    "content": "<p>Aprender a programar pode ser um desafio, mas com algumas estratégias você pode tornar esse processo mais eficiente e prazeroso. Neste post, compartilho 5 dicas essenciais para quem quer evoluir mais rápido na programação:</p><ol><li><strong>Pratique todos os dias:</strong> A constância faz a diferença. Dedique pelo menos 30 minutos diários para codar.</li><li><strong>Trabalhe em projetos reais:</strong> Criar pequenos projetos te ajuda a fixar o conhecimento e resolver problemas reais.</li><li><strong>Busque entender os erros:</strong> Em vez de apenas copiar soluções, tente entender o motivo do erro e como corrigi-lo.</li><li><strong>Leia códigos de outras pessoas:</strong> Isso amplia sua visão sobre diferentes formas de resolver um mesmo problema.</li><li><strong>Participe de comunidades:</strong> Pergunte, compartilhe e troque experiências com outros devs. Isso acelera seu crescimento.</li></ol><p>Continue acompanhando o BlogTech para mais dicas e conteúdos sobre desenvolvimento!</p>"
+  }
+]

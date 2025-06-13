@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>BlogTech - Post</title>
+  <link rel="stylesheet" href="assets/style.css">
+  <script>
+    async function loadPost() {
+      const params = new URLSearchParams(window.location.search);
+      const postId = params.get('id');
+      if (!postId) {
+        document.getElementById('post-content').innerHTML = '<p>Post não encontrado.</p>';
+        return;
+      }
+      const res = await fetch('data/posts.json');
+      const posts = await res.json();
+      const post = posts.find(p => p.id == postId);
+      if (!post) {
+        document.getElementById('post-content').innerHTML = '<p>Post não encontrado.</p>';
+        return;
+      }
+      document.title = `BlogTech - ${post.title}`;
+      document.getElementById('post-content').innerHTML = `
+        <h1 class="heading-primary">${post.title}</h1>
+        <div class="post-meta">${post.date} • ${post.author}</div>
+        <div>${post.content}</div>
+        <a class="button" href="posts.html">← Voltar para Posts</a>
+      `;
+    }
+    window.onload = loadPost;
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <img src="assets/logo.svg" alt="BlogTech Logo" class="site-logo">
+    <span class="site-title">BlogTech</span>
+    <nav class="site-nav">
+      <a href="index.html" class="site-nav-link">Home</a>
+      <a href="posts.html" class="site-nav-link">Posts</a>
+      <a href="about.html" class="site-nav-link">Sobre</a>
+      <a href="contact.html" class="site-nav-link">Contato</a>
+    </nav>
+  </header>
+  <main class="main-container" id="post-content"></main>
+  <footer class="site-footer">
+    &copy; 2025 BlogTech. Criado por Felipe Gomes.
+  </footer>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>BlogTech - Posts</title>
+  <link rel="stylesheet" href="assets/style.css">
+  <script>
+    async function loadPosts() {
+      const res = await fetch('data/posts.json');
+      const posts = await res.json();
+      const list = document.getElementById('posts-list');
+      posts.reverse().forEach(post => {
+        const li = document.createElement('li');
+        li.className = 'post-list-item';
+        li.innerHTML = `
+          <div class="post-title"><a href="post.html?id=${post.id}">${post.title}</a></div>
+          <div class="post-meta">${post.date} • ${post.author}</div>
+          <div>${post.summary}</div>
+        `;
+        list.appendChild(li);
+      });
+    }
+    window.onload = loadPosts;
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <img src="assets/logo.svg" alt="BlogTech Logo" class="site-logo">
+    <span class="site-title">BlogTech</span>
+    <nav class="site-nav">
+      <a href="index.html" class="site-nav-link">Home</a>
+      <a href="posts.html" class="site-nav-link">Posts</a>
+      <a href="about.html" class="site-nav-link">Sobre</a>
+      <a href="contact.html" class="site-nav-link">Contato</a>
+    </nav>
+  </header>
+  <main class="main-container">
+    <h1 class="heading-primary">Posts Recentes</h1>
+    <ul class="post-list" id="posts-list"></ul>
+  </main>
+  <footer class="site-footer">
+    &copy; 2025 BlogTech. Criado por Felipe Gomes.
+  </footer>
+</body>
+</html>
